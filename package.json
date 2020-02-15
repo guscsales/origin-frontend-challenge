@@ -26,6 +26,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "jest": "^24.9.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svg-sprite": "^1.4.1",
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
@@ -45,5 +46,10 @@
   "bugs": {
     "url": "https://github.com/OriginFinancial/frontend-challenge/issues"
   },
-  "homepage": "https://github.com/OriginFinancial/frontend-challenge#readme"
+  "homepage": "https://github.com/OriginFinancial/frontend-challenge#readme",
+  "svgSpriteOptions": {
+    "include": [
+      "src/assets/svg/**/*"
+    ]
+  }
 }
