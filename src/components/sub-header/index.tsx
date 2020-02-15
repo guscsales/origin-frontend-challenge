@@ -14,7 +14,7 @@ export default function SubHeader(): React.ReactElement {
 
   return (
     <StyledSubHeader>
-      <Title level={2} center margin={false}>
+      <Title level={2} center noBold noMargin>
         Let's plan your <strong>saving goal.</strong>
       </Title>
     </StyledSubHeader>
