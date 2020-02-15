@@ -7,7 +7,8 @@ const FONT_SIZES: {
   [key: string]: string;
 } = {
   h1: '2.8rem',
-  h2: '2.1rem'
+  h2: '2.1rem',
+  h3: '1.8rem'
 };
 
 export default (
@@ -16,12 +17,13 @@ export default (
     center,
     noMargin,
     color,
-    noBold
+    noBold,
+    bold
   }: PropTypes.InferProps<typeof Title.propTypes>
 ) => styled(heading as AnyStyledComponent)`
     font-family: ${props => props.theme.fonts.primary.family};
     font-size: ${FONT_SIZES[heading]};
-    font-weight: ${noBold ? '400' : '600'};
+    font-weight: ${noBold ? '400' : bold};
     margin: 0;
     ${center && 'text-align: center'}
     ${!noMargin && 'margin-bottom: 4rem'}

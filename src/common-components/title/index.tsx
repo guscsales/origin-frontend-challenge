@@ -20,9 +20,11 @@ Title.propTypes = {
   noMargin: PropTypes.bool,
   color: PropTypes.oneOf(COLOR_TYPES),
   noBold: PropTypes.bool,
+  bold: PropTypes.string,
   children: PropTypes.node.isRequired
 };
 
 Title.defaultProps = {
-  color: 'primary'
+  color: 'primary',
+  bold: '600'
 };

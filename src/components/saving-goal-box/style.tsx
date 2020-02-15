@@ -1,25 +1,14 @@
 import styled from 'styled-components';
 import devices from '../../configs/styles/devices';
+import Svg from '../../common-components/svg';
 
-export const StyledWrapper = styled.div`
-  animation: fadeIn 800ms ease-out;
+export const StyledIcon = styled(Svg)`
+  width: 6rem;
+  height: 6.4rem;
 
   @media ${devices.desktop} {
-    width: 56rem;
-    margin: 0 auto;
-  }
-
-  @keyframes fadeIn {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-      visibility: hidden;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
-    }
+    width: 7.4rem;
+    height: 6rem;
   }
 `;
 
@@ -29,6 +18,7 @@ export const StyledCols = styled.div`
   margin-bottom: 1rem;
 
   > * {
+    width: 100%;
     margin-bottom: 1.9rem;
   }
 
@@ -36,7 +26,6 @@ export const StyledCols = styled.div`
     flex-wrap: nowrap;
 
     > * {
-      width: 100%;
       padding-right: 1.7rem;
 
       :last-child {

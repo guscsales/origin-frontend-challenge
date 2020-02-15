@@ -31,10 +31,12 @@ export default function Card({
   `;
 
   const containerPadding = `
-    padding: 4rem;
-
     @media ${devices.mobile} {
-      padding: 2.75rem 2.5rem;
+      padding: 2rem 2.5rem;
+    }
+
+    @media ${devices.desktop} {
+      padding: 4rem;
     }
   `;
 

@@ -1,9 +1,10 @@
 import * as React from 'react';
-import Header from './components/header';
 import { ThemeProvider } from 'styled-components';
+import Header from './components/header';
 import theme from './configs/styles/themes';
 import SubHeader from './components/sub-header';
 import SavingGoalBox from './components/saving-goal-box';
+import Cardboard from './common-components/cardboard';
 
 const App: React.FunctionComponent = () => {
   return (
@@ -11,7 +12,9 @@ const App: React.FunctionComponent = () => {
       <ThemeProvider theme={theme}>
         <Header />
         <SubHeader />
-        <SavingGoalBox />
+        <Cardboard>
+          <SavingGoalBox />
+        </Cardboard>
       </ThemeProvider>
     </>
   );
