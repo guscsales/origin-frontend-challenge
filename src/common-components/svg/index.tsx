@@ -1,19 +1,18 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
 
-export default function Svg({
-  src,
-  ...props
-}: PropTypes.InferProps<typeof Svg.propTypes>): React.ReactElement {
+interface SvgProps {
+  src: string;
+  width?: string;
+  height?: string;
+  children?: React.ReactNode;
+}
+
+const Svg: React.SFC<SvgProps> = ({ src, ...props }) => {
   return (
     <svg {...props}>
       <use xlinkHref={src} />
     </svg>
   );
-}
-
-Svg.propTypes = {
-  src: PropTypes.string.isRequired,
-  width: PropTypes.string,
-  height: PropTypes.string
 };
+
+export default Svg;

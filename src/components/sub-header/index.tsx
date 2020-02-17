@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import devices from '../../configs/styles/devices';
 import Title from '../../common-components/title';
 
-export default function SubHeader(): React.ReactElement {
+const SubHeader: React.SFC = () => {
   const StyledSubHeader = styled.div`
     margin: 3rem 0;
 
@@ -19,4 +19,6 @@ export default function SubHeader(): React.ReactElement {
       </Title>
     </StyledSubHeader>
   );
-}
+};
+
+export default SubHeader;

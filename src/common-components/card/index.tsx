@@ -3,11 +3,13 @@ import * as PropTypes from 'prop-types';
 import styled from 'styled-components';
 import devices from '../../configs/styles/devices';
 
-export default function Card({
-  layout,
-  footer,
-  children
-}: PropTypes.InferProps<typeof Card.propTypes>): React.ReactElement {
+interface CardProps {
+  layout?: boolean;
+  footer?: React.ReactNode;
+  children: React.ReactNode;
+}
+
+const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
   const mobileStyles = `
     @media ${devices.mobile} {
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.02);
@@ -55,15 +57,11 @@ export default function Card({
   `;
 
   return (
-    <StyledCard>
+    <StyledCard {...props}>
       <StyledContent>{children}</StyledContent>
       {footer && <StyledFooter>{footer}</StyledFooter>}
     </StyledCard>
   );
-}
-
-Card.propTypes = {
-  layout: PropTypes.bool,
-  footer: PropTypes.node,
-  children: PropTypes.node.isRequired
 };
+
+export default Card;

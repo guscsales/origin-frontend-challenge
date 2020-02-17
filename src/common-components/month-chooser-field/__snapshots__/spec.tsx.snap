@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthChooserField #render should match a snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c0 {
+  color: #1e1f21;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.c2 {
+  width: 6.7rem;
+  height: 5.3rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e1e8ed;
+  background-color: #e1e8ed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 svg {
+  width: 0.9rem;
+  height: 1.6rem;
+}
+
+.c4 {
+  width: 6.7rem;
+  height: 5.3rem;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #e1e8ed;
+  background-color: #e1e8ed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4 svg {
+  width: 0.9rem;
+  height: 1.6rem;
+  -webkit-transform: scale(-1,1);
+  -ms-transform: scale(-1,1);
+  transform: scale(-1,1);
+}
+
+.c3 {
+  width: 100%;
+  font-family: Work Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.7rem 0;
+  border: 1px solid #e1e8ed;
+  border-left: none;
+  border-right: none color:#1e1f21;
+  position: relative;
+  text-align: center;
+}
+
+.c3 strong,
+.c3 span {
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+<div>
+  <label
+    className="c0"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 prev-arrow"
+      onClick={[Function]}
+    >
+      <svg>
+        <use />
+      </svg>
+    </div>
+    <div
+      className="c3 date"
+    >
+      <strong>
+        March
+      </strong>
+      <span>
+        2020
+      </span>
+    </div>
+    <div
+      className="c4 next-arrow"
+      onClick={[Function]}
+    >
+      <svg>
+        <use />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

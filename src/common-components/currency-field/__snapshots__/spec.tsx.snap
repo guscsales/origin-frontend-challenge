@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrencyField #render should match a snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  color: #1e1f21;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.c2 {
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e1e8ed;
+  background-color: #f4f8fa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+}
+
+<div>
+  <label
+    className="c0"
+  >
+    test
+  </label>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      $
+    </div>
+    <div
+      className="react-currency-input"
+    />
+  </div>
+</div>
+`;

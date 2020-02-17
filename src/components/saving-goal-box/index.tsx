@@ -11,7 +11,7 @@ import toCurrency from '../../lib/to-currency';
 const DEFAULT_MONTHS_VALUE = 48;
 const DEFAULT_AMOUNT_VALUE = 1000;
 
-export default function SavingGoalBox(): React.ReactElement {
+const SavingGoalBox: React.SFC = () => {
   const [amount, setAmount] = React.useState({
     value: DEFAULT_AMOUNT_VALUE,
     maskedValue: toCurrency(DEFAULT_AMOUNT_VALUE)
@@ -70,4 +70,6 @@ export default function SavingGoalBox(): React.ReactElement {
       <Button type="button">Finish</Button>
     </>
   );
-}
+};
+
+export default SavingGoalBox;

@@ -13,10 +13,11 @@ export const StyledLabel = styled.label`
   display: block;
 `;
 
-export const StyledArrow = styled.div`
+export const StyledArrow: any = styled.div`
   width: 6.7rem;
   height: 5.3rem;
-  border-radius: ${props => (props.next ? '0 5px 5px 0' : '5px 0 0 5px')};
+  border-radius: ${(props: any) =>
+    props.next ? '0 5px 5px 0' : '5px 0 0 5px'};
   border: 1px solid ${props => props.theme.colors.lightGray};
   background-color: ${props => props.theme.colors.lightGray};
   display: flex;
@@ -30,7 +31,7 @@ export const StyledArrow = styled.div`
   svg {
     width: 0.9rem;
     height: 1.6rem;
-    ${props => props.next && 'transform: scale(-1, 1);'}
+    ${(props: any) => props.next && 'transform: scale(-1, 1);'}
   }
 `;
 

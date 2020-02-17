@@ -1,12 +1,12 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
 import styled from 'styled-components';
 import devices from '../../configs/styles/devices';
 import Card from '../card';
 
-export default function Cardboard({
-  children
-}: PropTypes.InferProps<typeof Card.propTypes>): React.ReactElement {
+interface CardboardProps {
+  children: React.ReactNode;
+}
+const Cardboard: React.SFC<CardboardProps> = ({ children }) => {
   const StyledWrapper = styled.div`
     animation: fadeIn 800ms ease-out;
 
@@ -34,8 +34,6 @@ export default function Cardboard({
       <Card layout>{children}</Card>
     </StyledWrapper>
   );
-}
-
-Cardboard.propTypes = {
-  children: PropTypes.node.isRequired
 };
+
+export default Cardboard;

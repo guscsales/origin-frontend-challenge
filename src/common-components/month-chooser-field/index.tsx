@@ -11,18 +11,23 @@ import {
 } from './styles';
 import Svg from '../svg';
 
-enum MonthChooserArrowTypes {
+export enum MonthChooserArrowTypes {
   INCREMENT,
   DECREMENT
 }
 
-export default function MonthChooserField({
+interface MonthChooserFieldProps {
+  label: React.ReactNode;
+  defaultValue: number;
+  onChange: (...args: any[]) => any;
+  children?: React.ReactNode;
+}
+
+const MonthChooserField: React.SFC<MonthChooserFieldProps> = ({
   label,
   defaultValue,
   onChange
-}: PropTypes.InferProps<
-  typeof MonthChooserField.propTypes
->): React.ReactElement {
+}) => {
   const [months, setMonths] = React.useState(defaultValue);
   const [dateLabel, setDateLabel] = React.useState(
     getMonthsFromNow(defaultValue)
@@ -31,13 +36,13 @@ export default function MonthChooserField({
   function handleChangeMonths(type: MonthChooserArrowTypes) {
     let newMonthValue = months;
 
-    if (type === MonthChooserArrowTypes.DECREMENT && months > 1) {
+    if (type === MonthChooserArrowTypes.DECREMENT && months > 2) {
       newMonthValue = months - 1;
-    } else if (type === MonthChooserArrowTypes.INCREMENT) {
-      newMonthValue = months + 1;
     }
 
-    console.log(newMonthValue);
+    if (type === MonthChooserArrowTypes.INCREMENT) {
+      newMonthValue = months + 1;
+    }
 
     const dateLabels = getMonthsFromNow(newMonthValue);
 
@@ -52,16 +57,18 @@ export default function MonthChooserField({
       <StyledLabel>{label}</StyledLabel>
       <StyledWrapper>
         <StyledArrow
+          className="prev-arrow"
           onClick={() => handleChangeMonths(MonthChooserArrowTypes.DECREMENT)}
         >
           <Svg src={arrow} />
         </StyledArrow>
-        <StyledDatePickerField>
+        <StyledDatePickerField className="date">
           <strong>{dateLabel.month}</strong>
           <span>{dateLabel.year}</span>
         </StyledDatePickerField>
         <StyledArrow
           next
+          className="next-arrow"
           onClick={() => handleChangeMonths(MonthChooserArrowTypes.INCREMENT)}
         >
           <Svg src={arrow} />
@@ -69,15 +76,11 @@ export default function MonthChooserField({
       </StyledWrapper>
     </div>
   );
-}
-
-MonthChooserField.propTypes = {
-  label: PropTypes.node.isRequired,
-  defaultValue: PropTypes.number,
-  onChange: PropTypes.func
 };
 
 MonthChooserField.defaultProps = {
   onChange: () => {},
   defaultValue: 1
 };
+
+export default MonthChooserField;

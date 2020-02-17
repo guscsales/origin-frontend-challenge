@@ -1,3 +1,4 @@
+import * as React from 'react';
 import styled from 'styled-components';
 import CurrencyInput from 'react-currency-input';
 
@@ -26,7 +27,9 @@ export const StyledIcon = styled.div`
   color: ${props => props.theme.colors.darkGray};
 `;
 
-export const StyledCurrencyField = styled(CurrencyInput)`
+export const StyledCurrencyField = styled(props => (
+  <CurrencyInput {...props} />
+))`
   width: calc(100% - 5.5rem);
   font-family: ${props => props.theme.fonts.primary.family};
   font-size: 2rem;

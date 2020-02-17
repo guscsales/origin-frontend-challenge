@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cardboard #render should match a snapshot 1`] = `
+.c0 {
+  -webkit-animation: fadeIn 800ms ease-out;
+  animation: fadeIn 800ms ease-out;
+}
+
+.c1 {
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #e1e8ed;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:320px) {
+  .c1 {
+    box-shadow: 0 0 3px rgba(0,0,0,0.02);
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    border: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    height: auto;
+    border: 1px solid #e1e8ed;
+  }
+}
+
+@media (min-width:320px) {
+  .c2 {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    padding: 4rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      test
+    </div>
+  </div>
+</div>
+`;

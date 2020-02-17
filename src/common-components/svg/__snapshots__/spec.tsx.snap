@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Svg #render should match a snapshot 1`] = `
+<svg
+  height="10px"
+  width="10px"
+>
+  <use />
+</svg>
+`;

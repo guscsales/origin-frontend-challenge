@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card #render should match a snapshot of a default form 1`] = `
+.c0 {
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #e1e8ed;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    height: auto;
+    border: 1px solid #e1e8ed;
+  }
+}
+
+@media (min-width:320px) {
+  .c1 {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding: 4rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    test
+  </div>
+</div>
+`;
+
+exports[`Card #render should match a snapshot of a layout form 1`] = `
+.c0 {
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #e1e8ed;
+}
+
+@media (min-width:320px) {
+  .c0 {
+    box-shadow: 0 0 3px rgba(0,0,0,0.02);
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    border: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    height: auto;
+    border: 1px solid #e1e8ed;
+  }
+}
+
+@media (min-width:320px) {
+  .c1 {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding: 4rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    test
+  </div>
+</div>
+`;
