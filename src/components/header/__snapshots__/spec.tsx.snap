@@ -18,10 +18,15 @@ exports[`Header #render should match a snapshot 1`] = `
   height: 5.6rem;
   padding: 0;
   margin-bottom: 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 @media (min-width:1024px) {
   .c0 {
+    position: relative;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;

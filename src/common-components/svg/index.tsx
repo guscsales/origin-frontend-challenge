@@ -5,12 +5,13 @@ interface SvgProps {
   width?: string;
   height?: string;
   children?: React.ReactNode;
+  useClass?: string;
 }
 
-const Svg: React.SFC<SvgProps> = ({ src, ...props }) => {
+const Svg: React.SFC<SvgProps> = ({ src, useClass, ...props }) => {
   return (
     <svg {...props}>
-      <use xlinkHref={src} />
+      <use xlinkHref={src} className={useClass} />
     </svg>
   );
 };

@@ -613,7 +613,7 @@ Array [
 }
 
 .c0:hover {
-  background-color: #192d98;
+  background-color: #162575;
 }
 
 @media (min-width:1024px) {

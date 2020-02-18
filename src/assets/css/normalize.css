@@ -15,3 +15,7 @@ body {
   color: #1c1e1f;
   font-size: 14px;
 }
+
+svg path {
+  fill: inherit;
+}

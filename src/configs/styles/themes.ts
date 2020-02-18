@@ -7,7 +7,7 @@ const grayScale = {
 
 const blue = {
   primary: '#1b31a8',
-  primaryHover: '#192d98',
+  primaryHover: '#162575',
   secondary: '#0079ff',
   success: '#4fda68',
   danger: '#fe5722',

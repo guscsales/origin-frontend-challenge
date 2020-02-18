@@ -2,10 +2,40 @@
 
 exports[`SubHeader #render should match a snapshot 1`] = `
 .c0 {
-  margin: 3rem 0;
+  margin: 8.4rem 0 3rem;
+  position: relative;
 }
 
 .c1 {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: none;
+  z-index: 2;
+}
+
+.c1 use.back-button {
+  fill: #1e1f21;
+}
+
+.c2 {
   font-family: Work Sans;
   font-size: 2.1rem;
   font-weight: 400;
@@ -14,11 +44,11 @@ exports[`SubHeader #render should match a snapshot 1`] = `
   color: #1b31a8;
 }
 
-.c1 strong {
+.c2 strong {
   font-weight: 600;
 }
 
-.c1 span {
+.c2 span {
   display: block;
   font-size: 1.5rem;
   font-weight: 400;
@@ -28,7 +58,25 @@ exports[`SubHeader #render should match a snapshot 1`] = `
 
 @media (min-width:1024px) {
   .c0 {
-    margin: 4.5rem 0;
+    width: 56rem;
+    margin: 4.5rem auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 5.6rem;
+    margin: 4.5rem auto;
+    border: 1px solid #e1e8ed;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.8rem;
+  }
+
+  .c1 use.back-button {
+    fill: #657786;
   }
 }
 
@@ -39,8 +87,20 @@ exports[`SubHeader #render should match a snapshot 1`] = `
 <div
   className="c0"
 >
-  <h2
+  <button
     className="c1"
+  >
+    <svg
+      height="18px"
+      width="10px"
+    >
+      <use
+        className="back-button"
+      />
+    </svg>
+  </button>
+  <h2
+    className="c2"
   >
     Let's plan your 
     <strong>
