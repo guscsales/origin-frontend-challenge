@@ -41,7 +41,7 @@
     "typescript": "^3.7.3"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose false --silent",
     "lint": "eslint './src/**/*.{ts,tsx}' './spec/**/*.{ts,tsx}' --quiet",
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"

@@ -1,7 +1,6 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
 import arrow from '../../assets/svg/icons/arrow.svg';
-import getMonthsFromNow from '../../lib/get-months-from-now';
+import getMonthsFrom from '../../lib/get-months-from';
 
 import {
   StyledWrapper,
@@ -28,9 +27,10 @@ const MonthChooserField: React.SFC<MonthChooserFieldProps> = ({
   defaultValue,
   onChange
 }) => {
+  const currentDate = new Date();
   const [months, setMonths] = React.useState(defaultValue);
   const [dateLabel, setDateLabel] = React.useState(
-    getMonthsFromNow(defaultValue)
+    getMonthsFrom(currentDate, defaultValue)
   );
 
   function handleChangeMonths(type: MonthChooserArrowTypes) {
@@ -44,7 +44,7 @@ const MonthChooserField: React.SFC<MonthChooserFieldProps> = ({
       newMonthValue = months + 1;
     }
 
-    const dateLabels = getMonthsFromNow(newMonthValue);
+    const dateLabels = getMonthsFrom(currentDate, newMonthValue);
 
     setMonths(newMonthValue);
     setDateLabel(dateLabels);

@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SavingGoalBox #render should match a snapshot 1`] = `
+Array [
+  .c0 {
+  width: 6rem;
+  height: 6.4rem;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 7.4rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<svg
+    className="c0"
+  >
+    <use />
+  </svg>,
+  .c0 {
+  font-family: Work Sans;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 4rem;
+  color: #1e1f21;
+}
+
+.c0 strong {
+  font-weight: 600;
+}
+
+.c0 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  color: #657786;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    margin: 0 0 4.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<h1
+    className="c0"
+  >
+    Go to College
+    <span>
+      Saving goal
+    </span>
+  </h1>,
+  .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  color: #1e1f21;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.c3 {
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e1e8ed;
+  background-color: #f4f8fa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c4 {
+  color: #1e1f21;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.c6 {
+  width: 6.7rem;
+  height: 5.3rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e1e8ed;
+  background-color: #e1e8ed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c6 svg {
+  width: 0.9rem;
+  height: 1.6rem;
+}
+
+.c8 {
+  width: 6.7rem;
+  height: 5.3rem;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #e1e8ed;
+  background-color: #e1e8ed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #657786;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c8 svg {
+  width: 0.9rem;
+  height: 1.6rem;
+  -webkit-transform: scale(-1,1);
+  -ms-transform: scale(-1,1);
+  transform: scale(-1,1);
+}
+
+.c7 {
+  width: 100%;
+  font-family: Work Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.7rem 0;
+  border: 1px solid #e1e8ed;
+  border-left: none;
+  border-right: none color:#1e1f21;
+  position: relative;
+  text-align: center;
+}
+
+.c7 strong,
+.c7 span {
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.c0 > * {
+  width: 100%;
+  margin-bottom: 1.9rem;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .c0 > * {
+    padding-right: 1.7rem;
+  }
+
+  .c0 > *:last-child {
+    padding: 0;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div>
+      <label
+        className="c1"
+      >
+        Total amount
+      </label>
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          $
+        </div>
+        <div
+          className="react-currency-input"
+        />
+      </div>
+    </div>
+    <div>
+      <label
+        className="c4"
+      >
+        Reach goal by
+      </label>
+      <div
+        className="c5"
+      >
+        <div
+          className="c6 prev-arrow"
+          onClick={[Function]}
+        >
+          <svg>
+            <use />
+          </svg>
+        </div>
+        <div
+          className="c7 date"
+        >
+          <strong>
+            February
+          </strong>
+          <span>
+            2024
+          </span>
+        </div>
+        <div
+          className="c8 next-arrow"
+          onClick={[Function]}
+        >
+          <svg>
+            <use />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 {
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid #e1e8ed;
+}
+
+.c5 {
+  background-color: #f4f8fa;
+}
+
+.c3 {
+  font-family: Work Sans;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #1e1f21;
+}
+
+.c3 strong {
+  font-weight: 600;
+}
+
+.c3 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  color: #657786;
+}
+
+.c4 {
+  font-family: Work Sans;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: #0079ff;
+}
+
+.c4 strong {
+  font-weight: 600;
+}
+
+.c4 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  color: #657786;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    height: auto;
+    border: 1px solid #e1e8ed;
+  }
+}
+
+@media (min-width:320px) {
+  .c1 {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    padding: 4rem;
+  }
+}
+
+@media (min-width:320px) {
+  .c5 {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    padding: 4rem;
+  }
+}
+
+@media (min-width:320px) {
+  .c5 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <h2
+          className="c3"
+        >
+          Monthly
+        </h2>
+        <h1
+          className="c4"
+        >
+          $
+          21
+        </h1>
+      </div>
+    </div>
+    <div
+      className="c5"
+    >
+      You're planning 
+      <strong>
+        48
+         monthly deposits
+      </strong>
+       to reach your 
+      <strong>
+        $
+        1,000
+      </strong>
+       goal by
+       
+      <strong>
+        February
+         
+        2024
+        .
+      </strong>
+    </div>
+  </div>,
+  .c0 {
+  width: 100%;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  padding: 1.5rem;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: #1b31a8;
+  font-family: Work Sans;
+}
+
+.c0:hover {
+  background-color: #192d98;
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    max-width: 40rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 3rem auto 1.5rem;
+  }
+}
+
+<button
+    className="c0"
+    type="button"
+  >
+    Finish
+  </button>,
+]
+`;

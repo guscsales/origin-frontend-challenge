@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubHeader #render should match a snapshot 1`] = `
+.c0 {
+  margin: 3rem 0;
+}
+
+.c1 {
+  font-family: Work Sans;
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  color: #1b31a8;
+}
+
+.c1 strong {
+  font-weight: 600;
+}
+
+.c1 span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.4rem;
+  color: #657786;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    margin: 4.5rem 0;
+  }
+}
+
+@media (min-width:1024px) {
+
+}
+
+<div
+  className="c0"
+>
+  <h2
+    className="c1"
+  >
+    Let's plan your 
+    <strong>
+      saving goal.
+    </strong>
+  </h2>
+</div>
+`;

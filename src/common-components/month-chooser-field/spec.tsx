@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 import theme from '../../configs/styles/themes';
 import { ThemeProvider } from 'styled-components';
 import MonthChooserField from '.';
-import getMonthsFromNow from '../../lib/get-months-from-now';
+import getMonthsFromNow from '../../lib/get-months-from';
 
 describe('MonthChooserField', () => {
   const getWrapper = (props: any = {}, renderType: any = mount) =>
@@ -13,6 +13,7 @@ describe('MonthChooserField', () => {
         <MonthChooserField {...props} />
       </ThemeProvider>
     );
+  const currentDate = new Date();
 
   describe('#handleChangeMonths', () => {
     it('should decrement the state value and render the month and year', () => {
@@ -20,7 +21,7 @@ describe('MonthChooserField', () => {
 
       wrapper.find('div.prev-arrow').simulate('click');
 
-      const { month, year } = getMonthsFromNow(2);
+      const { month, year } = getMonthsFromNow(currentDate, 2);
 
       expect(wrapper.find('div.date').text()).toBe(`${month}${year}`);
     });
@@ -30,7 +31,7 @@ describe('MonthChooserField', () => {
 
       wrapper.find('div.next-arrow').simulate('click');
 
-      const { month, year } = getMonthsFromNow(4);
+      const { month, year } = getMonthsFromNow(currentDate, 4);
 
       expect(wrapper.find('div.date').text()).toBe(`${month}${year}`);
     });

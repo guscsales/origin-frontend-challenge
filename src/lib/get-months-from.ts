@@ -1,6 +1,5 @@
-export default (monthsAhead: number) => {
-  const currentDate = new Date();
-  const futureDate = new Date().setMonth(currentDate.getMonth() + monthsAhead);
+export default (date: Date, monthsAhead: number) => {
+  const futureDate = new Date().setMonth(date.getMonth() + monthsAhead);
   const splittedLabels = new Intl.DateTimeFormat('en-US', {
     month: 'long',
     year: 'numeric'
