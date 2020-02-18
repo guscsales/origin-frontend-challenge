@@ -20,12 +20,14 @@ interface MonthChooserFieldProps {
   defaultValue: number;
   onChange: (...args: any[]) => any;
   children?: React.ReactNode;
+  id?: string;
 }
 
 const MonthChooserField: React.SFC<MonthChooserFieldProps> = ({
   label,
   defaultValue,
-  onChange
+  onChange,
+  ...props
 }) => {
   const currentDate = new Date();
   const [months, setMonths] = React.useState(defaultValue);
@@ -55,7 +57,7 @@ const MonthChooserField: React.SFC<MonthChooserFieldProps> = ({
   return (
     <div>
       <StyledLabel>{label}</StyledLabel>
-      <StyledWrapper>
+      <StyledWrapper {...props}>
         <StyledArrow
           className="prev-arrow"
           onClick={() => handleChangeMonths(MonthChooserArrowTypes.DECREMENT)}

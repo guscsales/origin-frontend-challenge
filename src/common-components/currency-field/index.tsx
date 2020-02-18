@@ -11,6 +11,7 @@ interface CurrencyFieldProps {
   defaultValue: number;
   onChange: (...args: any[]) => any;
   children?: React.ReactNode;
+  id?: string;
 }
 
 export const handleChangeValue = (
@@ -29,14 +30,15 @@ export const handleChangeValue = (
 const CurrencyField: React.SFC<CurrencyFieldProps> = ({
   label,
   defaultValue,
-  onChange
+  onChange,
+  ...props
 }) => {
   const [value, setValue] = React.useState(defaultValue);
 
   return (
     <div>
       <StyledLabel>{label}</StyledLabel>
-      <StyledWrapper>
+      <StyledWrapper {...props}>
         <StyledIcon>$</StyledIcon>
         <StyledCurrencyField
           decimalSeparator=","

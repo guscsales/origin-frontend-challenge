@@ -45,11 +45,13 @@ const SavingGoalBox: React.SFC = () => {
       </Title>
       <StyledCols>
         <CurrencyField
+          id="total-amount"
           label="Total amount"
           defaultValue={DEFAULT_AMOUNT_VALUE}
           onChange={handleChangeAmount}
         />
         <MonthChooserField
+          id="reach-goal-by"
           label="Reach goal by"
           defaultValue={DEFAULT_MONTHS_VALUE}
           onChange={handleChangeMonths}
@@ -70,7 +72,7 @@ const SavingGoalBox: React.SFC = () => {
           <Title level={2} color="superDarkGray" bold="500" noMargin>
             Monthly
           </Title>
-          <Title level={1} color="secondary" noMargin>
+          <Title id="total-deposits" level={1} color="secondary" noMargin>
             ${getDeposits(amount.value, months)}
           </Title>
         </StyledResult>
