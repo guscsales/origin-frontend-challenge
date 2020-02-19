@@ -50,6 +50,7 @@ npm run test
 also have end-to-end tests, just run:
 
 ```bash
+npm run dev # start the server in another terminal
 npm run e2e
 ```
 
