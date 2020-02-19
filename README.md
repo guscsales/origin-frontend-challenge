@@ -6,52 +6,11 @@ One key to financial well-being is planning & saving for your goals. Users can h
 
 You will build a piece of our savings feature by creating the the saving plan simulation screen.
 
-## The Saving Goal Plan Simulation Screen
+## Preview
 
-![Saving Goal Plan Mockup Desktop](https://github.com/OriginFinancial/frontend-take-home-assignment/blob/master/mockups/saving-goal-plan-desk.png)
+![Saving Goal Plan Mockup Desktop](https://github.com/salesgu/origin-frontend-challenge/blob/master/mockups/saving-goal-plan-desk.png)
 
-You will build a screen where the user will simulate saving towards the "go to college" saving goal.
-
-In it, the users choose (i) the value they want to save and (ii) the date they plan to reach the goal.
-
-When the users change the value of any of the inputs, the monthly deposit value is calculated and displayed to them.
-
-Mobile version mockup [here](https://github.com/OriginFinancial/frontend-take-home-assignment/blob/master/mockups/saving-goal-plan-mobile.png).
-
-## Instructions
-
-We expect you to:
-
-1. Develop the page as close as possible to the mockups, both on mobile & desktop.
-2. Implement business rules.
-3. Test the codebase.
-
-We've added a project structure (build system with react, redux, jest, styled-components and typescript) so you don't waste your time with configuration. If you are more comfortable with a different stack, feel free to change it.
-
-## Assets
-
-**Theme Colors:**
-
-- blue = `#1b31a8`
-- light blue = `#0079ff`
-- red = `#fe5722`
-- green = `#4fda68`
-- yellow = `#ffcc00`
-- black = `#000000`
-- almost black = `#1d1e1f`
-- dark grey = `#657786'`
-- grey = `#aab8c2`
-- light grey = `#e1e8ed`
-- superlight grey = `#f4f8fa`
-- grey blue = `#eff7ff`
-- white = `#ffffff`
-
-**Fonts:**
-
-- Work Sans
-- Rubik
-
-You can get it from `https://fonts.googleapis.com/css?family=Rubik:400,500,700|Work+Sans:400,600,500,700&display=swap`
+Mobile version mockup [here](https://github.com/salesgu/origin-frontend-challenge/blob/master/mockups/saving-goal-plan-mobile.png).
 
 ## Usage
 
@@ -73,12 +32,73 @@ That's it. Just Access `http://localhost:1234` in your browser.
 
 ### Linting
 
+To make better and clean up code, the project is using linters, you can run by command below:
+
 ```
 npm run lint
 ```
 
 ### Testing
 
+To see unit tests, just run:
+
 ```
 npm run test
 ```
+
+
+also have end-to-end tests, just run:
+
+```bash
+npm run e2e
+```
+
+## Documentation
+
+### ADR
+
+One type of documentation of this project is the [Architecture Decision Records (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record).
+
+#### What is this in fast words?
+
+_"An architecture decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences."_
+
+#### How can I use in pratice?
+
+To **create** a new doc:
+
+```bash
+npm run adr:new "Name of ADR"
+
+# e.g.: npm run adr:new "Usage of Typescript"
+```
+
+To **update** a doc:
+
+```bash
+npm run adr:update
+```
+
+To see the **logs**:
+
+```bash
+npm run adr:logs <index>
+
+# e.g.: npm run adr:logs 1
+```
+
+To create a **HTML** documenation:
+
+```bash
+npm run adr:generate-html
+
+# The doc will be generated in: "./docs/adr/exports/adr.html"
+```
+
+_You may see more details on the [official repo](https://github.com/phodal/adr). Thanks phodal for this one._
+
+## TODO List
+
+Somethings can be developed on this challenge yet, check the todo list [overhere](https://github.com/salesgu/origin-frontend-challenge/blob/master/TODO.md).
+
+# Thanks a lot :)

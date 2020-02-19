@@ -1,66 +1,72 @@
 {
-  "name": "frontend-challenge",
-  "version": "0.0.1",
-  "description": "Origin Frontend Challenge",
-  "main": "src/index.ts",
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-currency-input": "^1.3.6",
-    "react-datepicker": "^2.12.1",
-    "react-dom": "^16.12.0",
-    "react-month-picker": "^1.3.11",
-    "styled-components": "^5.0.1"
-  },
-  "devDependencies": {
-    "@testing-library/react": "^9.4.0",
-    "@types/enzyme": "^3.10.4",
-    "@types/jest": "^24.0.23",
-    "@types/react": "^16.9.14",
-    "@types/react-datepicker": "^2.11.0",
-    "@types/react-dom": "^16.9.4",
-    "@types/react-redux": "^7.1.7",
-    "@types/react-test-renderer": "^16.9.2",
-    "@types/styled-components": "^4.4.0",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
-    "babel-jest": "^24.9.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "jest": "^24.9.0",
-    "jest-styled-components": "^7.0.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-svg-sprite": "^1.4.1",
-    "prettier": "^1.19.1",
-    "react-test-renderer": "^16.12.0",
-    "testcafe": "^1.8.2",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.3"
-  },
-  "scripts": {
-    "test": "jest --verbose false --silent",
-    "lint": "eslint './src/**/*.{ts,tsx}' './spec/**/*.{ts,tsx}' --quiet",
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html",
-    "e2e": "testcafe chrome ./e2e"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OriginFinancial/frontend-challenge.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OriginFinancial/frontend-challenge/issues"
-  },
-  "homepage": "https://github.com/OriginFinancial/frontend-challenge#readme",
-  "svgSpriteOptions": {
-    "include": [
-      "src/assets/svg/**/*"
-    ]
-  }
+	"name": "frontend-challenge",
+	"version": "0.0.1",
+	"description": "Origin Frontend Challenge",
+	"main": "src/index.ts",
+	"dependencies": {
+		"react": "^16.12.0",
+		"react-currency-input": "^1.3.6",
+		"react-datepicker": "^2.12.1",
+		"react-dom": "^16.12.0",
+		"react-month-picker": "^1.3.11",
+		"styled-components": "^5.0.1"
+	},
+	"devDependencies": {
+		"@testing-library/react": "^9.4.0",
+		"@types/enzyme": "^3.10.4",
+		"@types/jest": "^24.0.23",
+		"@types/react": "^16.9.14",
+		"@types/react-datepicker": "^2.11.0",
+		"@types/react-dom": "^16.9.4",
+		"@types/react-redux": "^7.1.7",
+		"@types/react-test-renderer": "^16.9.2",
+		"@types/styled-components": "^4.4.0",
+		"@typescript-eslint/eslint-plugin": "^2.10.0",
+		"@typescript-eslint/parser": "^2.10.0",
+		"adr": "^1.1.2",
+		"babel-jest": "^24.9.0",
+		"enzyme": "^3.10.0",
+		"enzyme-adapter-react-16": "^1.15.1",
+		"eslint": "^6.7.2",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-react": "^7.17.0",
+		"eslint-plugin-react-hooks": "^2.3.0",
+		"jest": "^24.9.0",
+		"jest-styled-components": "^7.0.0",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-svg-sprite": "^1.4.1",
+		"prettier": "^1.19.1",
+		"react-test-renderer": "^16.12.0",
+		"testcafe": "^1.8.2",
+		"ts-jest": "^24.2.0",
+		"typescript": "^3.7.3"
+	},
+	"scripts": {
+		"adr": "adr list",
+		"adr:new": "adr new",
+		"adr:update": "adr update",
+		"adr:logs": "adr logs",
+		"adr:generate-html": "adr export html && mv ./export.html ./docs/adr/exports/adr.html && echo \"ADR created in ./docs/adr/exports/adr.html\"",
+		"build": "parcel build ./src/index.html",
+		"dev": "parcel ./src/index.html",
+		"e2e": "testcafe chrome ./e2e",
+		"lint": "eslint './src/**/*.{ts,tsx}' './spec/**/*.{ts,tsx}' --quiet",
+		"test": "jest --verbose false --silent"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OriginFinancial/frontend-challenge.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OriginFinancial/frontend-challenge/issues"
+	},
+	"homepage": "https://github.com/OriginFinancial/frontend-challenge#readme",
+	"svgSpriteOptions": {
+		"include": [
+			"src/assets/svg/**/*"
+		]
+	}
 }
