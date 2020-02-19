@@ -376,6 +376,7 @@ Array [
       </label>
       <div
         className="c2"
+        id="total-amount"
       >
         <div
           className="c3"
@@ -395,6 +396,7 @@ Array [
       </label>
       <div
         className="c5"
+        id="reach-goal-by"
       >
         <div
           className="c6 prev-arrow"
@@ -567,6 +569,7 @@ Array [
         </h2>
         <h1
           className="c4"
+          id="total-deposits"
         >
           $
           21

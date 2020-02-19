@@ -51,7 +51,7 @@
 		"build": "parcel build ./src/index.html",
 		"dev": "parcel ./src/index.html",
 		"e2e": "testcafe chrome ./e2e",
-		"lint": "eslint './src/**/*.{ts,tsx}' './spec/**/*.{ts,tsx}' --quiet",
+		"lint": "eslint './src/**/*.{ts,tsx}' --quiet",
 		"test": "jest --verbose false --silent"
 	},
 	"repository": {
