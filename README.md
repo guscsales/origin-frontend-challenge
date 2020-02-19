@@ -95,6 +95,8 @@ npm run adr:generate-html
 # The doc will be generated in: "./docs/adr/exports/adr.html"
 ```
 
+`Note: all files will be created in "./docs/adr/".`
+
 _You may see more details on the [official repo](https://github.com/phodal/adr). Thanks phodal for this one._
 
 ## TODO List
