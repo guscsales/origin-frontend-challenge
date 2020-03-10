@@ -4,15 +4,23 @@ import Header from './components/header';
 import theme from './configs/styles/themes';
 import SavingGoalPage from './pages/saving-goal-page';
 import DashboardPage from './pages/dashboard-page';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App: React.FunctionComponent = () => {
 	return (
-		<>
+		<Router>
 			<ThemeProvider theme={theme}>
 				<Header />
-				<DashboardPage />
+				<Switch>
+					<Route path="/">
+						<DashboardPage />
+					</Route>
+					<Route path="/saving-goal">
+						<SavingGoalPage />
+					</Route>
+				</Switch>
 			</ThemeProvider>
-		</>
+		</Router>
 	);
 };
 
