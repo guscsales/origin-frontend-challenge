@@ -1,16 +1,15 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
 import styled from 'styled-components';
 import devices from '../../configs/styles/devices';
 
 interface CardProps {
-  layout?: boolean;
-  footer?: React.ReactNode;
-  children: React.ReactNode;
+	layout?: boolean;
+	footer?: React.ReactNode;
+	children: React.ReactNode;
 }
 
 const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
-  const mobileStyles = `
+	const mobileStyles = `
     @media ${devices.mobile} {
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.02);
       height: 100%;
@@ -19,7 +18,7 @@ const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
     }
   `;
 
-  const StyledCard = styled.div`
+	const StyledCard = styled.div`
     background: #fff;
     border-radius: 7px;
     border: 1px solid ${props => props.theme.colors.lightGray};
@@ -32,7 +31,7 @@ const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
     }
   `;
 
-  const containerPadding = `
+	const containerPadding = `
     @media ${devices.mobile} {
       padding: 2rem 2.5rem;
     }
@@ -42,11 +41,11 @@ const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
     }
   `;
 
-  const StyledContent = styled.div`
-    ${containerPadding}
-  `;
+	const StyledContent = styled.div`
+		${containerPadding}
+	`;
 
-  const StyledFooter = styled.div`
+	const StyledFooter = styled.div`
     background-color: ${props => props.theme.colors.superLightGray};
 
     ${containerPadding}
@@ -56,12 +55,12 @@ const Card: React.SFC<CardProps> = ({ layout, footer, children, ...props }) => {
     }
   `;
 
-  return (
-    <StyledCard {...props}>
-      <StyledContent>{children}</StyledContent>
-      {footer && <StyledFooter>{footer}</StyledFooter>}
-    </StyledCard>
-  );
+	return (
+		<StyledCard {...props}>
+			<StyledContent>{children}</StyledContent>
+			{footer && <StyledFooter>{footer}</StyledFooter>}
+		</StyledCard>
+	);
 };
 
 export default Card;

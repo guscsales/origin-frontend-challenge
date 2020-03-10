@@ -5,6 +5,7 @@ import theme from './configs/styles/themes';
 import SavingGoalPage from './pages/saving-goal-page';
 import DashboardPage from './pages/dashboard-page';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Routes } from './enums/routes';
 
 const App: React.FunctionComponent = () => {
 	return (
@@ -12,11 +13,11 @@ const App: React.FunctionComponent = () => {
 			<ThemeProvider theme={theme}>
 				<Header />
 				<Switch>
-					<Route path="/">
-						<DashboardPage />
-					</Route>
-					<Route path="/saving-goal">
+					<Route path={Routes.SAVING_GOAL}>
 						<SavingGoalPage />
+					</Route>
+					<Route path={Routes.DASHBOARD}>
+						<DashboardPage />
 					</Route>
 				</Switch>
 			</ThemeProvider>

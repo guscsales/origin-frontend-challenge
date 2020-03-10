@@ -4,26 +4,34 @@ import devices from '../../configs/styles/devices';
 import Title from '../../common-components/title';
 import Svg from '../../common-components/svg';
 import arrow from '../../assets/svg/icons/arrow.svg';
+import { Link } from 'react-router-dom';
+import { Routes } from '../../enums/routes';
 
 interface SubHeaderProps {
 	children: React.ReactNode;
 	center?: boolean;
-	backButton?: boolean;
+	backButtonUrl?: Routes;
+	color?: string;
+	level?: number;
 }
 
 const SubHeader: React.SFC<SubHeaderProps> = ({
 	children,
 	center,
-	backButton
+	color,
+	backButtonUrl,
+	level
 }) => {
 	const StyledSubHeader = styled.div`
 		margin: 8.4rem 0 3rem;
 		position: relative;
+		padding: 0 10px;
 
 		@media ${devices.desktop} {
 			width: ${props =>
 				center ? '56rem' : props.theme.sizes.container.desktop};
 			margin: 4.5rem auto;
+			padding: 0;
 		}
 	`;
 
@@ -64,17 +72,19 @@ const SubHeader: React.SFC<SubHeaderProps> = ({
 
 	return (
 		<StyledSubHeader>
-			{backButton && (
+			{backButtonUrl && (
 				<StyledBackButton>
-					<Svg
-						src={arrow}
-						width="10px"
-						height="18px"
-						useClass="back-button"
-					/>
+					<Link to={backButtonUrl}>
+						<Svg
+							src={arrow}
+							width="10px"
+							height="18px"
+							useClass="back-button"
+						/>
+					</Link>
 				</StyledBackButton>
 			)}
-			<Title level={2} center={center} noBold noMargin>
+			<Title level={level} center={center} color={color} noBold noMargin>
 				{children}
 			</Title>
 		</StyledSubHeader>
