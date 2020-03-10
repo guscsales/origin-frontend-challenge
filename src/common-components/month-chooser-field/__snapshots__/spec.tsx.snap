@@ -130,7 +130,7 @@ exports[`MonthChooserField #render should match a snapshot 1`] = `
       className="c3 date"
     >
       <strong>
-        March
+        April
       </strong>
       <span>
         2020
