@@ -33,6 +33,7 @@ exports[`Header #render should match a snapshot 1`] = `
     justify-content: flex-start;
     padding: 0 4rem;
     margin-bottom: 4.5rem;
+    box-sizing: border-box;
   }
 }
 

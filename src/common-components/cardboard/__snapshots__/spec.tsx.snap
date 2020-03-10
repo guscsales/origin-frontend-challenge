@@ -15,7 +15,7 @@ exports[`Cardboard #render should match a snapshot 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56rem;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
   }
 }
 
