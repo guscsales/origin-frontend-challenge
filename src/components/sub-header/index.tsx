@@ -73,16 +73,16 @@ const SubHeader: React.SFC<SubHeaderProps> = ({
 	return (
 		<StyledSubHeader>
 			{backButtonUrl && (
-				<StyledBackButton>
-					<Link to={backButtonUrl}>
+				<Link to={backButtonUrl}>
+					<StyledBackButton>
 						<Svg
 							src={arrow}
 							width="10px"
 							height="18px"
 							useClass="back-button"
 						/>
-					</Link>
-				</StyledBackButton>
+					</StyledBackButton>
+				</Link>
 			)}
 			<Title level={level} center={center} color={color} noBold noMargin>
 				{children}

@@ -13,7 +13,7 @@ const App: React.FunctionComponent = () => {
 			<ThemeProvider theme={theme}>
 				<Header />
 				<Switch>
-					<Route path={Routes.SAVING_GOAL}>
+					<Route path={`${Routes.SAVING_GOAL}/:savingGoalId`}>
 						<SavingGoalPage />
 					</Route>
 					<Route path={Routes.DASHBOARD}>

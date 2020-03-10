@@ -5,6 +5,10 @@ import goToCollegeIcon from '../../assets/svg/icons/academy.svg';
 import styled from 'styled-components';
 import { Routes } from '../../enums/routes';
 import devices from '../../configs/styles/devices';
+import {
+	SavingGoalService,
+	SAVING_GOAL_STORAGE_KEY
+} from '../../services/saving-goal.service';
 
 const Grid = styled(Container)`
 	display: grid;
@@ -23,34 +27,33 @@ const Grid = styled(Container)`
 	}
 `;
 
+const savingGoalService = new SavingGoalService();
+
 const Dashboard: React.SFC = () => {
+	const [cards, setCards] = React.useState([]);
+
+	React.useEffect(() => {
+		setCards(savingGoalService.getSavingGoals());
+	});
+
+	function isPlanned(id: string) {
+		return (window as any).localStorage.getItem(
+			`${SAVING_GOAL_STORAGE_KEY}${id}`
+		);
+	}
+
 	return (
 		<Grid>
-			<DashboardCard
-				title="Go to college"
-				icon={goToCollegeIcon}
-				route={Routes.SAVING_GOAL}
-			/>
-			<DashboardCard
-				title="Go to college"
-				icon={goToCollegeIcon}
-				route={Routes.SAVING_GOAL}
-			/>
-			<DashboardCard
-				title="Go to college"
-				icon={goToCollegeIcon}
-				route={Routes.SAVING_GOAL}
-			/>
-			<DashboardCard
-				title="Go to college"
-				icon={goToCollegeIcon}
-				route={Routes.SAVING_GOAL}
-			/>
-			<DashboardCard
-				title="Go to college"
-				icon={goToCollegeIcon}
-				route={Routes.SAVING_GOAL}
-			/>
+			{cards.map(({ id, name }) => (
+				<DashboardCard
+					key={id}
+					savingGoalId={id}
+					title={name}
+					icon={goToCollegeIcon}
+					route={`${Routes.SAVING_GOAL}/${id}`}
+					planned={isPlanned(id)}
+				/>
+			))}
 		</Grid>
 	);
 };
